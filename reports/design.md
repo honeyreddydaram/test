@@ -2,7 +2,7 @@
 
 ## Scope and audience
 
-A local, adult-supervised research prototype for children under 12. No children participated. Under 12 is not one reading or proficiency level: educator review and a consented usability study remain necessary. The UI presents one puzzle, short feedback, progress estimates and light gamification. It never requests identities or personal stories. All seven phases are implemented as an explainable baseline with the limits below.
+A local research prototype for anyone learning English grammar. No real learners participated. Learners differ in reading and proficiency levels: educator review and a consented usability study remain necessary. The UI presents one puzzle, short feedback, progress estimates and light gamification. It never requests identities or personal stories. All seven phases are implemented as an explainable baseline with the limits below.
 
 ## Phase 1: grammar and error map
 
@@ -12,7 +12,7 @@ The bank now contains 90 scored items, five distinct prompts per concept, plus o
 
 ## Phase 2: learner state and BKT
 
-Each concept stores mastery, attempts, ten recent error events, last response time, hint usage and last-practiced time. The full event history is separate. BKT assumes a hidden known/unknown state, with provisional prior .35, learning .12, slip .10 and guess .20. These are assumptions, not validated child-specific estimates.
+Each concept stores mastery, attempts, ten recent error events, last response time, hint usage and last-practiced time. The full event history is separate. BKT assumes a hidden known/unknown state, with provisional prior .35, learning .12, slip .10 and guess .20. These are assumptions, not validated learner-specific estimates.
 
 For decayed mastery m, success probability is m(1-slip)+(1-m)guess. Correct-answer likelihoods are (1-slip, guess); incorrect-answer likelihoods are (slip, 1-guess). Bayes combines these with m to produce a posterior, then the learning transition adds (1-posterior)learn. Before an observation/prediction, mastery decays as m × 2^(-elapsed_days/30). This assumes a zero asymptote and no spontaneous learning; both require later validation.
 
@@ -46,7 +46,7 @@ The benchmark compares soft prerequisites (`adaptive`), a hard-gating comparison
 
 React/TypeScript → FastAPI → pure model/engine → SQLite. The entry point is now just a bootstrap; `App.tsx` owns session/navigation state. `ExerciseCard`, `TwinExplorer`, `SkillMap` and `DataControls` have explicit props, shared types and a small formatting helper. Backend and tests use expanded formatting; the BKT implementation names its likelihoods and posterior calculations. Model functions have no HTTP/database dependencies. Existing API shapes and SQLite tables remain compatible; new metadata is embedded in event JSON.
 
-Random tab-scoped bearer tokens provide local session isolation. SQL is parameterized and keys never reach the browser. This is not a public child-account service: authentication, transport security, rate limits, retention, encryption, backup erasure and consent capture require deployment work. The My data view exports all events and current estimates or deletes session rows. Deletion is application-level, not forensic SQLite/backups erasure. Closing a tab loses its key; delete before closing. No remote fonts, analytics or default remote LLM requests are used.
+Random tab-scoped bearer tokens provide local session isolation. SQL is parameterized and keys never reach the browser. This is not a public account service: authentication, transport security, rate limits, retention, encryption, backup erasure and consent capture require deployment work. The My data view exports all events and current estimates or deletes session rows. Deletion is application-level, not forensic SQLite/backups erasure. Closing a tab loses its key; delete before closing. No remote fonts, analytics or default remote LLM requests are used.
 
 ## Phase 7: evaluation and results
 
@@ -66,6 +66,6 @@ Explainability includes visible BKT assumptions, prerequisite links, error histo
 
 ## Limitations and next steps
 
-Soft prerequisites improve synthetic attainment relative to hard gating but do not establish superiority over fixed practice. The simulator has no prerequisite learning effects and therefore does not measure possible benefits of foundation practice. Add such effects, item-specific memory and unseen transfer probes; run multiple seeds with uncertainty intervals; fit parameters; validate item ambiguity and developmental suitability; test format-specific guessing and less restrictive generation with independent checks. Do not tune to one simulator and claim real-world efficacy. Before any child pilot, obtain parental consent, school approval and ethical review, plus accessible usability testing and deployment privacy/security review.
+Soft prerequisites improve synthetic attainment relative to hard gating but do not establish superiority over fixed practice. The simulator has no prerequisite learning effects and therefore does not measure possible benefits of foundation practice. Add such effects, item-specific memory and unseen transfer probes; run multiple seeds with uncertainty intervals; fit parameters; validate item ambiguity and learner suitability; test format-specific guessing and less restrictive generation with independent checks. Do not tune to one simulator and claim real-world efficacy. Before any learner pilot, obtain informed consent and ethical review, plus accessible usability testing and deployment privacy/security review.
 
-Validation: 24 backend unit/integration tests, two rendered-component frontend regression tests, and a production TypeScript/Vite build. Browser interaction, live LLM calls and child usability were not tested.
+Validation: 24 backend unit/integration tests, two rendered-component frontend regression tests, and a production TypeScript/Vite build. Browser interaction, live LLM calls and learner usability were not tested.

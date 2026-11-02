@@ -108,7 +108,7 @@ export function App() {
             grammar garden<small>Small steps. Growing skills.</small>
           </span>
         </a>
-        <span className="tag">RESEARCH DEMO · ADULT SUPERVISION</span>
+        <span className="tag">ENGLISH GRAMMAR · RESEARCH DEMO</span>
       </header>
       <main>
         <nav aria-label="Main view">
@@ -155,7 +155,7 @@ export function App() {
               Start a demo garden ↗
             </button>
             <p className="muted">
-              For adults exploring a learning prototype with children.
+              For anyone exploring an English grammar learning prototype.
               <br />
               No names, email addresses, or personal stories needed.
             </p>

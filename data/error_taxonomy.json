@@ -11,7 +11,7 @@
     {
       "id": "wrong_plural",
       "description": "Regular and irregular plurals: form missing, misplaced or inappropriate",
-      "feedback": "Use books, but children and feet.",
+      "feedback": "Use books, but mice and feet.",
       "skill": "plural"
     },
     {

@@ -1,6 +1,6 @@
 # Grammar Garden: an explainable learner digital twin
 
-A local React/TypeScript + FastAPI + SQLite research prototype for children under 12, with adult supervision. No real children participated. The seed bank is a small demonstration, not a validated curriculum or child-ready product.
+A local React/TypeScript + FastAPI + SQLite research prototype for anyone learning English grammar. No real learners participated. The seed bank is a small demonstration, not a validated curriculum.
 
 ## Run
 
@@ -46,13 +46,13 @@ Set `LLM_API_KEY`, optionally `LLM_URL` and `LLM_MODEL`, in your environment, ne
 
 ## Privacy and research boundaries
 
-This is a **local, single-browser research demo**, not a service for unsupervised child accounts. A random bearer token separates sessions; it is pseudonymous, not guaranteed anonymous. Keep the token private. No names, emails, birthdays, IP logs or raw answers are stored by the application. Disable HTTP access logs if operating with real users. Metadata includes item skill, error category, timing, hint count and timestamp. SQLite is unencrypted. Delete removes application rows, not a forensic erasure of database pages/backups. No analytics or student-facing remote LLM is enabled. Fonts use system fallbacks and no external font requests.
+This is a **local, single-browser research demo**, not a production account service. A random bearer token separates sessions; it is pseudonymous, not guaranteed anonymous. Keep the token private. No names, emails, birthdays, IP logs or raw answers are stored by the application. Disable HTTP access logs if operating with real users. Metadata includes item skill, error category, timing, hint count and timestamp. SQLite is unencrypted. Delete removes application rows, not a forensic erasure of database pages/backups. No analytics or student-facing remote LLM is enabled. Fonts use system fallbacks and no external font requests.
 
-The My data view exports all interaction events and current state, or deletes all rows for the session. Session keys are tab-scoped: delete before closing the tab, since there is no identity-based recovery. There is no retention scheduler yet. Before a child pilot: parental consent, school approval and ethics review, age-appropriate accessibility/usability review, deployment security, retention and backup-erasure policies, validated exercises and review of applicable local law. This repo does not collect consent or claim those reviews have happened.
+The My data view exports all interaction events and current state, or deletes all rows for the session. Session keys are tab-scoped: delete before closing the tab, since there is no identity-based recovery. There is no retention scheduler yet. Before a learner pilot: informed consent and ethics review, accessibility/usability review, deployment security, retention and backup-erasure policies, validated exercises and review of applicable local law. This repo does not collect consent or claim those reviews have happened.
 
 ## Verification limits
 
-Backend unit/integration tests and a production TypeScript/Vite build are automated. The UI has not had a browser or child usability audit. Simulation outcomes cannot establish an educational benefit. In the checked seed, soft prerequisites reach 43%, hard gating 29%, and fixed sequencing 46% at the latent mastery threshold; see the report rather than assuming adaptivity is better.
+Backend unit/integration tests and a production TypeScript/Vite build are automated. The UI has not had a browser or learner usability audit. Simulation outcomes cannot establish an educational benefit. In the checked seed, soft prerequisites reach 43%, hard gating 29%, and fixed sequencing 46% at the latent mastery threshold; see the report rather than assuming adaptivity is better.
 
 ## Revision: coverage, grading and policy
 

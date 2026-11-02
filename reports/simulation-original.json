@@ -2,7 +2,7 @@
   "seed": 20261102,
   "learners": 100,
   "steps_per_learner": 200,
-  "assumptions": "Heterogeneous learn/slip/guess; binary latent skills; no latent prerequisite effects or forgetting during a short run; censored at budget; BKT defaults intentionally imperfect. Paired skill-exposure random draws. No claim about child learning.",
+  "assumptions": "Heterogeneous learn/slip/guess; binary latent skills; no latent prerequisite effects or forgetting during a short run; censored at budget; BKT defaults intentionally imperfect. Paired skill-exposure random draws. No claim about real-world learning.",
   "policies": {
     "adaptive": {
       "prediction": {

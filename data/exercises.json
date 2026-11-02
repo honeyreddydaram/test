@@ -18,13 +18,13 @@
     "id": "item-1",
     "skill": "plural",
     "type": "fill",
-    "prompt": "Two ___ are playing. (child)",
+    "prompt": "Two ___ are on the pond. (goose)",
     "answers": [
-      "children"
+      "geese"
     ],
     "distractors": {
-      "childs": "wrong_plural",
-      "child": "wrong_plural"
+      "gooses": "wrong_plural",
+      "goose": "wrong_plural"
     },
     "options": [],
     "difficulty": 0.0,
@@ -614,7 +614,7 @@
     "id": "drop_e-1",
     "skill": "drop_e",
     "type": "fill",
-    "prompt": "The child is ___ a bike. (ride)",
+    "prompt": "The rider is ___ a bike. (ride)",
     "answers": [
       "riding"
     ],
@@ -689,7 +689,7 @@
     "id": "y_to_i-2",
     "skill": "y_to_i",
     "type": "fill",
-    "prompt": "Last night the baby ___. (cry)",
+    "prompt": "Last night the actor ___. (cry)",
     "answers": [
       "cried"
     ],
@@ -764,7 +764,7 @@
     "id": "doubling-3",
     "skill": "doubling",
     "type": "fill",
-    "prompt": "The child is ___ on the chair. (sit)",
+    "prompt": "The visitor is ___ on the chair. (sit)",
     "answers": [
       "sitting"
     ],
@@ -944,7 +944,7 @@
     "id": "present-3",
     "skill": "present",
     "type": "fill",
-    "prompt": "Every Monday I ___ to school. (walk)",
+    "prompt": "Every Monday I ___ to the library. (walk)",
     "answers": [
       "walk"
     ],

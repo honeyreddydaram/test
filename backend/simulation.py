@@ -124,7 +124,7 @@ def run(seed=20261102, learners=100, steps=200):
         "seed": seed,
         "learners": learners,
         "steps_per_learner": steps,
-        "assumptions": "Heterogeneous learn/slip/guess; binary latent skills; no latent prerequisite effects or forgetting during a short run; censored at budget; BKT defaults intentionally imperfect. Paired skill-exposure random draws. All policies use the same 90-item bank and repeat-evidence weighting. No item memorization in the latent simulator; extra items alone cannot improve its true learning. No claim about child learning.",
+        "assumptions": "Heterogeneous learn/slip/guess; binary latent skills; no latent prerequisite effects or forgetting during a short run; censored at budget; BKT defaults intentionally imperfect. Paired skill-exposure random draws. All policies use the same 90-item bank and repeat-evidence weighting. No item memorization in the latent simulator; extra items alone cannot improve its true learning. No claim about real-world learning.",
         "policies": policies,
     }
 

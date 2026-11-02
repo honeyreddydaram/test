@@ -42,8 +42,7 @@ export function DataControls({ busy, safe, api, erase }: Props) {
       </button>
       <p className="muted">
         Closing the tab loses the session key. Delete your demo data before
-        leaving. A real child pilot needs consent, school approval, and ethical
-        review.
+        leaving. A real learner pilot needs informed consent and ethical review.
       </p>
     </section>
   );
