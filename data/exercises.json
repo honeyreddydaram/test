@@ -1,0 +1,312 @@
+[
+  {
+    "id": "item-0",
+    "skill": "word_order",
+    "type": "reorder",
+    "prompt": "Reorder: books / reads / she",
+    "answers": [
+      "She reads books"
+    ],
+    "distractors": {
+      "reads she books": "wrong_word_order"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-1",
+    "skill": "plural",
+    "type": "fill",
+    "prompt": "Two ___ are playing. (child)",
+    "answers": [
+      "children"
+    ],
+    "distractors": {
+      "childs": "wrong_plural",
+      "child": "wrong_plural"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-2",
+    "skill": "bases",
+    "type": "choose",
+    "prompt": "What is the base of unhelpful?",
+    "answers": [
+      "help"
+    ],
+    "distractors": {
+      "helpful": "wrong_base"
+    },
+    "options": [
+      "help",
+      "helpful",
+      "unhelp"
+    ],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-3",
+    "skill": "prefixes",
+    "type": "choose",
+    "prompt": "Choose the opposite of happy.",
+    "answers": [
+      "unhappy"
+    ],
+    "distractors": {
+      "dishappy": "wrong_prefix"
+    },
+    "options": [
+      "unhappy",
+      "dishappy",
+      "happily"
+    ],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-4",
+    "skill": "suffixes",
+    "type": "fill",
+    "prompt": "Form a noun from kind: kind___.",
+    "answers": [
+      "ness"
+    ],
+    "distractors": {
+      "ly": "wrong_suffix"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-5",
+    "skill": "drop_e",
+    "type": "fill",
+    "prompt": "She is ___ dinner. (make)",
+    "answers": [
+      "making"
+    ],
+    "distractors": {
+      "makeing": "retained_final_e"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-6",
+    "skill": "y_to_i",
+    "type": "fill",
+    "prompt": "Yesterday she ___ again. (try)",
+    "answers": [
+      "tried"
+    ],
+    "distractors": {
+      "tryed": "unchanged_y"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-7",
+    "skill": "doubling",
+    "type": "fill",
+    "prompt": "The bus ___ here yesterday. (stop)",
+    "answers": [
+      "stopped"
+    ],
+    "distractors": {
+      "stoped": "missing_doubling"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-8",
+    "skill": "articles",
+    "type": "fill",
+    "prompt": "Choose a or an: I ate ___ apple.",
+    "answers": [
+      "an"
+    ],
+    "distractors": {
+      "a": "wrong_article",
+      "": "missing_article",
+      "the": "wrong_article"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-9",
+    "skill": "agreement",
+    "type": "choose",
+    "prompt": "She ___ every day.",
+    "answers": [
+      "works"
+    ],
+    "distractors": {
+      "work": "agreement_mismatch"
+    },
+    "options": [
+      "works",
+      "work",
+      "working"
+    ],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-10",
+    "skill": "present",
+    "type": "choose",
+    "prompt": "Look! They ___ now.",
+    "answers": [
+      "are running"
+    ],
+    "distractors": {
+      "run": "wrong_present_aspect"
+    },
+    "options": [
+      "are running",
+      "run",
+      "runs"
+    ],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-11",
+    "skill": "past",
+    "type": "correct",
+    "prompt": "Correct the verb: Yesterday I goed home.",
+    "answers": [
+      "went"
+    ],
+    "distractors": {
+      "goed": "overgeneralized_ed",
+      "go": "wrong_past_form"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-12",
+    "skill": "perfect",
+    "type": "fill",
+    "prompt": "She has ___ her homework. (finish)",
+    "answers": [
+      "finished"
+    ],
+    "distractors": {
+      "finish": "wrong_perfect_form"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-13",
+    "skill": "future",
+    "type": "choose",
+    "prompt": "Tomorrow, I will ___ you.",
+    "answers": [
+      "call"
+    ],
+    "distractors": {
+      "called": "wrong_future_form"
+    },
+    "options": [
+      "call",
+      "called",
+      "calling"
+    ],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-14",
+    "skill": "prepositions",
+    "type": "fill",
+    "prompt": "The meeting is ___ Monday.",
+    "answers": [
+      "on"
+    ],
+    "distractors": {
+      "in": "wrong_preposition",
+      "at": "wrong_preposition"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-15",
+    "skill": "comparatives",
+    "type": "fill",
+    "prompt": "My bag is ___ than yours. (heavy)",
+    "answers": [
+      "heavier"
+    ],
+    "distractors": {
+      "heavyer": "wrong_comparative"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-16",
+    "skill": "questions",
+    "type": "correct",
+    "prompt": "Correct the main verb: Does she works here?",
+    "answers": [
+      "work"
+    ],
+    "distractors": {
+      "works": "wrong_auxiliary"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "item-17",
+    "skill": "conditionals",
+    "type": "choose",
+    "prompt": "If it rains tomorrow, we ___ indoors.",
+    "answers": [
+      "will stay"
+    ],
+    "distractors": {
+      "would stay": "wrong_conditional_tense"
+    },
+    "options": [
+      "will stay",
+      "would stay",
+      "stayed"
+    ],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "writing-1",
+    "skill": "past",
+    "type": "writing",
+    "prompt": "Write two sentences about what a made-up character did yesterday. This writing task is unscored.",
+    "answers": [],
+    "distractors": {},
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  }
+]

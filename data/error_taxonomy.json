@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "unclassified": "Incorrect answer without a defensible specific diagnosis; do not infer why.",
+  "errors": [
+    {
+      "id": "wrong_word_order",
+      "description": "Basic sentence word order: form missing, misplaced or inappropriate",
+      "feedback": "Subject + verb + object: She reads books.",
+      "skill": "word_order"
+    },
+    {
+      "id": "wrong_plural",
+      "description": "Regular and irregular plurals: form missing, misplaced or inappropriate",
+      "feedback": "Use books, but children and feet.",
+      "skill": "plural"
+    },
+    {
+      "id": "wrong_base",
+      "description": "Word bases and stems: form missing, misplaced or inappropriate",
+      "feedback": "Identify the base before adding an affix.",
+      "skill": "bases"
+    },
+    {
+      "id": "wrong_prefix",
+      "description": "Prefixes: form missing, misplaced or inappropriate",
+      "feedback": "un- often negates an adjective; meaning depends on the word.",
+      "skill": "prefixes"
+    },
+    {
+      "id": "wrong_suffix",
+      "description": "Derivational suffixes: form missing, misplaced or inappropriate",
+      "feedback": "-ness can turn an adjective into a noun.",
+      "skill": "suffixes"
+    },
+    {
+      "id": "retained_final_e",
+      "description": "Drop final silent e: form missing, misplaced or inappropriate",
+      "feedback": "Usually drop silent e before -ing: make \u2192 making; see \u2192 seeing is an exception.",
+      "skill": "drop_e"
+    },
+    {
+      "id": "unchanged_y",
+      "description": "Change consonant + y to i: form missing, misplaced or inappropriate",
+      "feedback": "Consonant + y changes before -ed: try \u2192 tried; before -ing: trying.",
+      "skill": "y_to_i"
+    },
+    {
+      "id": "missing_doubling",
+      "description": "Final consonant doubling: form missing, misplaced or inappropriate",
+      "feedback": "Double after a stressed short vowel in CVC endings: stop \u2192 stopped; visit \u2192 visited.",
+      "skill": "doubling"
+    },
+    {
+      "id": "missing_article",
+      "description": "Articles and determiners: form missing, misplaced or inappropriate",
+      "feedback": "A singular count noun usually needs a determiner: a book.",
+      "skill": "articles"
+    },
+    {
+      "id": "wrong_article",
+      "description": "Wrong a/an/the choice",
+      "feedback": "Use an before a vowel sound: an apple.",
+      "skill": "articles"
+    },
+    {
+      "id": "unnecessary_article",
+      "description": "Article used where zero article is required",
+      "feedback": "General plural nouns often use no article: Books are useful.",
+      "skill": "articles"
+    },
+    {
+      "id": "agreement_mismatch",
+      "description": "Subject\u2013verb agreement: form missing, misplaced or inappropriate",
+      "feedback": "She works; they work.",
+      "skill": "agreement"
+    },
+    {
+      "id": "wrong_present_aspect",
+      "description": "Present simple and continuous: form missing, misplaced or inappropriate",
+      "feedback": "Use present continuous for an action happening now.",
+      "skill": "present"
+    },
+    {
+      "id": "wrong_past_form",
+      "description": "Past simple: form missing, misplaced or inappropriate",
+      "feedback": "Regular past uses -ed; go has irregular past went.",
+      "skill": "past"
+    },
+    {
+      "id": "overgeneralized_ed",
+      "description": "Regular -ed applied to an irregular verb, e.g. goed",
+      "feedback": "Go is irregular: its past form is went.",
+      "skill": "past"
+    },
+    {
+      "id": "wrong_perfect_form",
+      "description": "Present perfect: form missing, misplaced or inappropriate",
+      "feedback": "Use have/has + past participle.",
+      "skill": "perfect"
+    },
+    {
+      "id": "wrong_future_form",
+      "description": "Future forms: form missing, misplaced or inappropriate",
+      "feedback": "Will + base verb is one way to express a future prediction.",
+      "skill": "future"
+    },
+    {
+      "id": "wrong_preposition",
+      "description": "Prepositions of time and place: form missing, misplaced or inappropriate",
+      "feedback": "Use on Monday, in June, at noon.",
+      "skill": "prepositions"
+    },
+    {
+      "id": "wrong_comparative",
+      "description": "Comparatives and superlatives: form missing, misplaced or inappropriate",
+      "feedback": "Use taller, happier, and more interesting.",
+      "skill": "comparatives"
+    },
+    {
+      "id": "wrong_auxiliary",
+      "description": "Questions and negation: form missing, misplaced or inappropriate",
+      "feedback": "Use does + base verb: Does she work?",
+      "skill": "questions"
+    },
+    {
+      "id": "wrong_conditional_tense",
+      "description": "Zero, first and second conditionals: form missing, misplaced or inappropriate",
+      "feedback": "First conditional: if + present, will + base verb.",
+      "skill": "conditionals"
+    }
+  ]
+}
