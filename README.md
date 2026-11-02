@@ -21,6 +21,7 @@ Open **http://127.0.0.1:8000**. Build before starting the API, because the stati
 ```bash
 .venv/bin/python -m unittest discover -s tests -v
 .venv/bin/python -m backend.simulation
+cd frontend && npm test
 ```
 
 The simulator overwrites `reports/simulation.json` using seed 20261102. It uses only the standard library. Python dependencies are fully pinned in `requirements.lock.txt`, direct dependencies in `requirements.txt`; npm dependencies are pinned by `frontend/package-lock.json`. Parameters live in `config.json`. The reference frontend assumes default parameter labels; update those labels if changing the configuration.
@@ -29,7 +30,7 @@ The simulator overwrites `reports/simulation.json` using seed 20261102. It uses 
 
 - `data/skills.json`: 18 concepts, scaffold links, morphology and local error feedback.
 - `data/error_taxonomy.json`: flat error catalog, with an explicit unclassified category.
-- `data/exercises.json`: 19 curated demo items across all five exercise formats.
+- `data/exercises.json`: 91 curated demo items (90 scored: five per skill, plus unscored writing) across all five exercise formats.
 - `backend/model.py`: pure BKT, forgetting, prediction and illustrative projection.
 - `backend/engine.py`: exact-key checking, conservative error diagnosis, policy and generation gate.
 - `backend/generation.py`: optional OpenAI-compatible LLM integration; disabled without credentials.
@@ -51,4 +52,14 @@ The My data view exports all interaction events and current state, or deletes al
 
 ## Verification limits
 
-Backend unit/integration tests and a production TypeScript/Vite build are automated. The UI has not had a browser or child usability audit. Simulation outcomes cannot establish an educational benefit. In the checked seed, the adaptive policy performs worse than fixed sequencing; see the report rather than assuming adaptivity is better.
+Backend unit/integration tests and a production TypeScript/Vite build are automated. The UI has not had a browser or child usability audit. Simulation outcomes cannot establish an educational benefit. In the checked seed, soft prerequisites reach 43%, hard gating 29%, and fixed sequencing 46% at the latent mastery threshold; see the report rather than assuming adaptivity is better.
+
+## Revision: coverage, grading and policy
+
+Every skill now has five distinct prompts. Selection rotates least-exposed items within a skill using persisted issue history, including skipped items. Completed repetitions get evidence weight `1 / (1 + prior_item_attempts)`, applied to observation likelihoods and the learning transition. This reduces overconfidence but cannot detect memorization or prove generalization. The what-if view still assumes fresh practice opportunities.
+
+Full-word suffix/prefix answers and common corrected-sentence variants are accepted as explicit keys. Arbitrary strings containing a valid answer remain incorrect. Writing has a nullable prediction and no numeric probability is displayed.
+
+Prerequisites are soft ranking penalties: average normalized deficit below 60% times 0.15. All skills are available; when nothing is in the challenge zone, least-practiced skills get priority. The simulator additionally runs hard prerequisites as a comparison on the same bank. Historical results are retained in `reports/simulation-original.json`.
+
+Frontend code is split into `App`, `ExerciseCard`, `TwinExplorer`, `SkillMap` and `DataControls`, plus shared types and formatting. Python modules and tests use expanded formatting and the model names its posterior calculations. Frontend regression tests render the actual Twin explorer for both writing and scored tasks.

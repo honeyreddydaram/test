@@ -1,0 +1,120 @@
+{
+  "seed": 20261102,
+  "learners": 100,
+  "steps_per_learner": 200,
+  "assumptions": "Heterogeneous learn/slip/guess; binary latent skills; no latent prerequisite effects or forgetting during a short run; censored at budget; BKT defaults intentionally imperfect. Paired skill-exposure random draws. No claim about child learning.",
+  "policies": {
+    "adaptive": {
+      "prediction": {
+        "n": 20000,
+        "auc": 0.8088107268559337,
+        "accuracy": 0.7754,
+        "brier": 0.15836781414597412,
+        "ece": 0.01022627733789215,
+        "calibration_bins": [
+          {
+            "bin": 2,
+            "count": 2911,
+            "predicted": 0.29696064665877664,
+            "observed": 0.27447612504294056
+          },
+          {
+            "bin": 3,
+            "count": 2019,
+            "predicted": 0.3298834660276184,
+            "observed": 0.3472015849430411
+          },
+          {
+            "bin": 4,
+            "count": 1733,
+            "predicted": 0.44506917671067,
+            "observed": 0.44143104443162146
+          },
+          {
+            "bin": 5,
+            "count": 1454,
+            "predicted": 0.5522537874613594,
+            "observed": 0.5859697386519945
+          },
+          {
+            "bin": 6,
+            "count": 351,
+            "predicted": 0.6475853710884315,
+            "observed": 0.6695156695156695
+          },
+          {
+            "bin": 7,
+            "count": 1524,
+            "predicted": 0.7509095829648064,
+            "observed": 0.7309711286089239
+          },
+          {
+            "bin": 8,
+            "count": 10008,
+            "predicted": 0.8891190840540761,
+            "observed": 0.8901878497202238
+          }
+        ]
+      },
+      "fraction_reaching_85_percent_latent_skills": 0.33,
+      "restricted_mean_steps_to_85_percent": 183.13,
+      "mean_final_latent_mastery": 0.7816666666666667
+    },
+    "fixed": {
+      "prediction": {
+        "n": 20000,
+        "auc": 0.8053083032717973,
+        "accuracy": 0.75905,
+        "brier": 0.16716804939231825,
+        "ece": 0.00923717836612878,
+        "calibration_bins": [
+          {
+            "bin": 2,
+            "count": 3281,
+            "predicted": 0.29702108028767543,
+            "observed": 0.2736970435842731
+          },
+          {
+            "bin": 3,
+            "count": 2267,
+            "predicted": 0.3298209434825678,
+            "observed": 0.3361270401411557
+          },
+          {
+            "bin": 4,
+            "count": 2129,
+            "predicted": 0.4448369447806827,
+            "observed": 0.4443400657585721
+          },
+          {
+            "bin": 5,
+            "count": 1547,
+            "predicted": 0.5526442546736535,
+            "observed": 0.579185520361991
+          },
+          {
+            "bin": 6,
+            "count": 394,
+            "predicted": 0.6466937320773837,
+            "observed": 0.6802030456852792
+          },
+          {
+            "bin": 7,
+            "count": 1647,
+            "predicted": 0.7459832844424493,
+            "observed": 0.7279902853673346
+          },
+          {
+            "bin": 8,
+            "count": 8735,
+            "predicted": 0.8858652376327948,
+            "observed": 0.8868918145392101
+          }
+        ]
+      },
+      "fraction_reaching_85_percent_latent_skills": 0.46,
+      "restricted_mean_steps_to_85_percent": 169.22,
+      "mean_final_latent_mastery": 0.8388888888888889
+    }
+  }
+}

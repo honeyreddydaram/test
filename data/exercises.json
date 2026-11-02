@@ -74,7 +74,8 @@
     "type": "fill",
     "prompt": "Form a noun from kind: kind___.",
     "answers": [
-      "ness"
+      "ness",
+      "kindness"
     ],
     "distractors": {
       "ly": "wrong_suffix"
@@ -189,7 +190,9 @@
     "type": "correct",
     "prompt": "Correct the verb: Yesterday I goed home.",
     "answers": [
-      "went"
+      "went",
+      "Yesterday I went home",
+      "I went home"
     ],
     "distractors": {
       "goed": "overgeneralized_ed",
@@ -270,7 +273,8 @@
     "type": "correct",
     "prompt": "Correct the main verb: Does she works here?",
     "answers": [
-      "work"
+      "work",
+      "Does she work here"
     ],
     "distractors": {
       "works": "wrong_auxiliary"
@@ -283,7 +287,7 @@
     "id": "item-17",
     "skill": "conditionals",
     "type": "choose",
-    "prompt": "If it rains tomorrow, we ___ indoors.",
+    "prompt": "If it rains tomorrow, choose the first-conditional result: we ___ indoors.",
     "answers": [
       "will stay"
     ],
@@ -295,6 +299,1098 @@
       "would stay",
       "stayed"
     ],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "word_order-1",
+    "skill": "word_order",
+    "type": "reorder",
+    "prompt": "Reorder: sings / bird / the",
+    "answers": [
+      "The bird sings"
+    ],
+    "distractors": {
+      "bird the sings": "wrong_word_order"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "word_order-2",
+    "skill": "word_order",
+    "type": "reorder",
+    "prompt": "Reorder: apples / likes / Sam",
+    "answers": [
+      "Sam likes apples"
+    ],
+    "distractors": {
+      "likes Sam apples": "wrong_word_order"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "word_order-3",
+    "skill": "word_order",
+    "type": "reorder",
+    "prompt": "Reorder: we / games / play",
+    "answers": [
+      "We play games"
+    ],
+    "distractors": {
+      "play we games": "wrong_word_order"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "word_order-4",
+    "skill": "word_order",
+    "type": "reorder",
+    "prompt": "Reorder: sleeps / cat / the",
+    "answers": [
+      "The cat sleeps"
+    ],
+    "distractors": {
+      "sleeps the cat": "wrong_word_order"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "plural-1",
+    "skill": "plural",
+    "type": "fill",
+    "prompt": "Three ___ swim in the pond. (duck)",
+    "answers": [
+      "ducks"
+    ],
+    "distractors": {
+      "duck": "wrong_plural"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "plural-2",
+    "skill": "plural",
+    "type": "fill",
+    "prompt": "Two ___ are on the shelf. (box)",
+    "answers": [
+      "boxes"
+    ],
+    "distractors": {
+      "boxs": "wrong_plural"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "plural-3",
+    "skill": "plural",
+    "type": "fill",
+    "prompt": "The cat has four ___. (foot)",
+    "answers": [
+      "feet"
+    ],
+    "distractors": {
+      "foots": "wrong_plural"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "plural-4",
+    "skill": "plural",
+    "type": "fill",
+    "prompt": "Two ___ ran across the floor. (mouse)",
+    "answers": [
+      "mice"
+    ],
+    "distractors": {
+      "mouses": "wrong_plural"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "bases-1",
+    "skill": "bases",
+    "type": "fill",
+    "prompt": "What is the base word of replay?",
+    "answers": [
+      "play"
+    ],
+    "distractors": {
+      "re": "wrong_base"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "bases-2",
+    "skill": "bases",
+    "type": "fill",
+    "prompt": "What is the base word of joyful?",
+    "answers": [
+      "joy"
+    ],
+    "distractors": {
+      "ful": "wrong_base"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "bases-3",
+    "skill": "bases",
+    "type": "fill",
+    "prompt": "What is the base word of painter?",
+    "answers": [
+      "paint"
+    ],
+    "distractors": {
+      "painter": "wrong_base"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "bases-4",
+    "skill": "bases",
+    "type": "fill",
+    "prompt": "What is the base word of unfair?",
+    "answers": [
+      "fair"
+    ],
+    "distractors": {
+      "un": "wrong_base"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "prefixes-1",
+    "skill": "prefixes",
+    "type": "fill",
+    "prompt": "Add a prefix to mean not fair: ___fair.",
+    "answers": [
+      "un",
+      "unfair"
+    ],
+    "distractors": {
+      "disfair": "wrong_prefix"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "prefixes-2",
+    "skill": "prefixes",
+    "type": "fill",
+    "prompt": "Add a prefix to mean play again: ___play.",
+    "answers": [
+      "re",
+      "replay"
+    ],
+    "distractors": {
+      "unplay": "wrong_prefix"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "prefixes-3",
+    "skill": "prefixes",
+    "type": "fill",
+    "prompt": "Add a prefix to mean not kind: ___kind.",
+    "answers": [
+      "un",
+      "unkind"
+    ],
+    "distractors": {
+      "rekind": "wrong_prefix"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "prefixes-4",
+    "skill": "prefixes",
+    "type": "fill",
+    "prompt": "Add a prefix to mean read again: ___read.",
+    "answers": [
+      "re",
+      "reread"
+    ],
+    "distractors": {
+      "unread": "wrong_prefix"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "suffixes-1",
+    "skill": "suffixes",
+    "type": "fill",
+    "prompt": "Form a noun from dark: dark___.",
+    "answers": [
+      "ness",
+      "darkness"
+    ],
+    "distractors": {
+      "darkly": "wrong_suffix"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "suffixes-2",
+    "skill": "suffixes",
+    "type": "fill",
+    "prompt": "Form a noun from sad: sad___.",
+    "answers": [
+      "ness",
+      "sadness"
+    ],
+    "distractors": {
+      "sadly": "wrong_suffix"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "suffixes-3",
+    "skill": "suffixes",
+    "type": "fill",
+    "prompt": "Form a noun meaning someone who teaches: teach___.",
+    "answers": [
+      "er",
+      "teacher"
+    ],
+    "distractors": {
+      "teaching": "wrong_suffix"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "suffixes-4",
+    "skill": "suffixes",
+    "type": "fill",
+    "prompt": "Form an adjective meaning full of hope: hope___.",
+    "answers": [
+      "ful",
+      "hopeful"
+    ],
+    "distractors": {
+      "hopeless": "wrong_suffix"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "drop_e-1",
+    "skill": "drop_e",
+    "type": "fill",
+    "prompt": "The child is ___ a bike. (ride)",
+    "answers": [
+      "riding"
+    ],
+    "distractors": {
+      "rideing": "retained_final_e"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "drop_e-2",
+    "skill": "drop_e",
+    "type": "fill",
+    "prompt": "The puppy is ___ in a box. (hide)",
+    "answers": [
+      "hiding"
+    ],
+    "distractors": {
+      "hideing": "retained_final_e"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "drop_e-3",
+    "skill": "drop_e",
+    "type": "fill",
+    "prompt": "We are ___ a game. (use)",
+    "answers": [
+      "using"
+    ],
+    "distractors": {
+      "useing": "retained_final_e"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "drop_e-4",
+    "skill": "drop_e",
+    "type": "fill",
+    "prompt": "Mia is ___ a cake. (bake)",
+    "answers": [
+      "baking"
+    ],
+    "distractors": {
+      "bakeing": "retained_final_e"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "y_to_i-1",
+    "skill": "y_to_i",
+    "type": "fill",
+    "prompt": "Yesterday I ___ my room. (tidy)",
+    "answers": [
+      "tidied"
+    ],
+    "distractors": {
+      "tidyed": "unchanged_y"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "y_to_i-2",
+    "skill": "y_to_i",
+    "type": "fill",
+    "prompt": "Last night the baby ___. (cry)",
+    "answers": [
+      "cried"
+    ],
+    "distractors": {
+      "cryed": "unchanged_y"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "y_to_i-3",
+    "skill": "y_to_i",
+    "type": "fill",
+    "prompt": "We ___ the books yesterday. (carry)",
+    "answers": [
+      "carried"
+    ],
+    "distractors": {
+      "carryed": "unchanged_y"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "y_to_i-4",
+    "skill": "y_to_i",
+    "type": "fill",
+    "prompt": "Yesterday we ___ the words. (copy)",
+    "answers": [
+      "copied"
+    ],
+    "distractors": {
+      "copyed": "unchanged_y"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "doubling-1",
+    "skill": "doubling",
+    "type": "fill",
+    "prompt": "The rabbit ___ away yesterday. (hop)",
+    "answers": [
+      "hopped"
+    ],
+    "distractors": {
+      "hoped": "missing_doubling"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "doubling-2",
+    "skill": "doubling",
+    "type": "fill",
+    "prompt": "We are ___ in the pool. (swim)",
+    "answers": [
+      "swimming"
+    ],
+    "distractors": {
+      "swiming": "missing_doubling"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "doubling-3",
+    "skill": "doubling",
+    "type": "fill",
+    "prompt": "The child is ___ on the chair. (sit)",
+    "answers": [
+      "sitting"
+    ],
+    "distractors": {
+      "siting": "missing_doubling"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "doubling-4",
+    "skill": "doubling",
+    "type": "fill",
+    "prompt": "Yesterday we ___ the trip. (plan)",
+    "answers": [
+      "planned"
+    ],
+    "distractors": {
+      "planed": "missing_doubling"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "articles-1",
+    "skill": "articles",
+    "type": "fill",
+    "prompt": "Choose a or an: I saw ___ owl.",
+    "answers": [
+      "an"
+    ],
+    "distractors": {
+      "a": "wrong_article"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "articles-2",
+    "skill": "articles",
+    "type": "fill",
+    "prompt": "Choose a or an: Here is ___ book.",
+    "answers": [
+      "a"
+    ],
+    "distractors": {
+      "an": "wrong_article"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "articles-3",
+    "skill": "articles",
+    "type": "fill",
+    "prompt": "Choose a or an: She has ___ umbrella.",
+    "answers": [
+      "an"
+    ],
+    "distractors": {
+      "a": "wrong_article"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "articles-4",
+    "skill": "articles",
+    "type": "fill",
+    "prompt": "Choose a or an: He drew ___ unicorn.",
+    "answers": [
+      "a"
+    ],
+    "distractors": {
+      "an": "wrong_article"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "agreement-1",
+    "skill": "agreement",
+    "type": "fill",
+    "prompt": "My brother ___ football every day. (play)",
+    "answers": [
+      "plays"
+    ],
+    "distractors": {
+      "play": "agreement_mismatch"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "agreement-2",
+    "skill": "agreement",
+    "type": "fill",
+    "prompt": "The dogs ___ loudly every night. (bark)",
+    "answers": [
+      "bark"
+    ],
+    "distractors": {
+      "barks": "agreement_mismatch"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "agreement-3",
+    "skill": "agreement",
+    "type": "fill",
+    "prompt": "The bird ___ every morning. (sing)",
+    "answers": [
+      "sings"
+    ],
+    "distractors": {
+      "sing": "agreement_mismatch"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "agreement-4",
+    "skill": "agreement",
+    "type": "fill",
+    "prompt": "Our teacher ___ us every day. (help)",
+    "answers": [
+      "helps"
+    ],
+    "distractors": {
+      "help": "agreement_mismatch"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "present-1",
+    "skill": "present",
+    "type": "fill",
+    "prompt": "Look! The dog ___ now. (sleep)",
+    "answers": [
+      "is sleeping"
+    ],
+    "distractors": {
+      "sleeps": "wrong_present_aspect"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "present-2",
+    "skill": "present",
+    "type": "fill",
+    "prompt": "Listen! We ___ now. (sing)",
+    "answers": [
+      "are singing"
+    ],
+    "distractors": {
+      "sing": "wrong_present_aspect"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "present-3",
+    "skill": "present",
+    "type": "fill",
+    "prompt": "Every Monday I ___ to school. (walk)",
+    "answers": [
+      "walk"
+    ],
+    "distractors": {
+      "am walking": "wrong_present_aspect"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "present-4",
+    "skill": "present",
+    "type": "fill",
+    "prompt": "Look! I ___ a picture right now. (draw)",
+    "answers": [
+      "am drawing"
+    ],
+    "distractors": {
+      "draw": "wrong_present_aspect"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "past-1",
+    "skill": "past",
+    "type": "fill",
+    "prompt": "Yesterday I ___ a bird. (see)",
+    "answers": [
+      "saw"
+    ],
+    "distractors": {
+      "seed": "overgeneralized_ed"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "past-2",
+    "skill": "past",
+    "type": "fill",
+    "prompt": "Yesterday we ___ a game. (play)",
+    "answers": [
+      "played"
+    ],
+    "distractors": {
+      "play": "wrong_past_form"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "past-3",
+    "skill": "past",
+    "type": "fill",
+    "prompt": "Last night she ___ a story. (write)",
+    "answers": [
+      "wrote"
+    ],
+    "distractors": {
+      "writed": "overgeneralized_ed"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "past-4",
+    "skill": "past",
+    "type": "fill",
+    "prompt": "Yesterday he ___ an apple. (eat)",
+    "answers": [
+      "ate"
+    ],
+    "distractors": {
+      "eated": "overgeneralized_ed"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "perfect-1",
+    "skill": "perfect",
+    "type": "fill",
+    "prompt": "We have ___ our lunch. (eat)",
+    "answers": [
+      "eaten"
+    ],
+    "distractors": {
+      "ate": "wrong_perfect_form"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "perfect-2",
+    "skill": "perfect",
+    "type": "fill",
+    "prompt": "She has ___ a picture. (draw)",
+    "answers": [
+      "drawn"
+    ],
+    "distractors": {
+      "drew": "wrong_perfect_form"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "perfect-3",
+    "skill": "perfect",
+    "type": "fill",
+    "prompt": "They have ___ the game. (start)",
+    "answers": [
+      "started"
+    ],
+    "distractors": {
+      "start": "wrong_perfect_form"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "perfect-4",
+    "skill": "perfect",
+    "type": "fill",
+    "prompt": "I have ___ that book. (read)",
+    "answers": [
+      "read"
+    ],
+    "distractors": {
+      "readed": "wrong_perfect_form"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "future-1",
+    "skill": "future",
+    "type": "fill",
+    "prompt": "Tomorrow she will ___ a picture. (paint)",
+    "answers": [
+      "paint"
+    ],
+    "distractors": {
+      "painted": "wrong_future_form"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "future-2",
+    "skill": "future",
+    "type": "fill",
+    "prompt": "Next week we will ___ a new game. (try)",
+    "answers": [
+      "try"
+    ],
+    "distractors": {
+      "tried": "wrong_future_form"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "future-3",
+    "skill": "future",
+    "type": "fill",
+    "prompt": "Later I will ___ a book. (read)",
+    "answers": [
+      "read"
+    ],
+    "distractors": {
+      "reading": "wrong_future_form"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "future-4",
+    "skill": "future",
+    "type": "fill",
+    "prompt": "Tomorrow they will ___ the park. (visit)",
+    "answers": [
+      "visit"
+    ],
+    "distractors": {
+      "visited": "wrong_future_form"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "prepositions-1",
+    "skill": "prepositions",
+    "type": "fill",
+    "prompt": "Choose in, on or at: The party is ___ June.",
+    "answers": [
+      "in"
+    ],
+    "distractors": {
+      "on": "wrong_preposition"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "prepositions-2",
+    "skill": "prepositions",
+    "type": "fill",
+    "prompt": "Choose in, on or at: Lunch starts ___ noon.",
+    "answers": [
+      "at"
+    ],
+    "distractors": {
+      "in": "wrong_preposition"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "prepositions-3",
+    "skill": "prepositions",
+    "type": "fill",
+    "prompt": "Choose in, on or at: We meet ___ Friday.",
+    "answers": [
+      "on"
+    ],
+    "distractors": {
+      "in": "wrong_preposition"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "prepositions-4",
+    "skill": "prepositions",
+    "type": "fill",
+    "prompt": "Choose in, on or at: The stars shine ___ night.",
+    "answers": [
+      "at"
+    ],
+    "distractors": {
+      "on": "wrong_preposition"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "comparatives-1",
+    "skill": "comparatives",
+    "type": "fill",
+    "prompt": "This tree is ___ than that tree. (tall)",
+    "answers": [
+      "taller"
+    ],
+    "distractors": {
+      "more tall": "wrong_comparative"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "comparatives-2",
+    "skill": "comparatives",
+    "type": "fill",
+    "prompt": "My puppy is ___ than yours. (small)",
+    "answers": [
+      "smaller"
+    ],
+    "distractors": {
+      "small": "wrong_comparative"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "comparatives-3",
+    "skill": "comparatives",
+    "type": "fill",
+    "prompt": "Today is ___ than yesterday. (hot)",
+    "answers": [
+      "hotter"
+    ],
+    "distractors": {
+      "hoter": "wrong_comparative"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "comparatives-4",
+    "skill": "comparatives",
+    "type": "fill",
+    "prompt": "This puzzle is ___ than that one. (easy)",
+    "answers": [
+      "easier"
+    ],
+    "distractors": {
+      "easyer": "wrong_comparative"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "questions-1",
+    "skill": "questions",
+    "type": "correct",
+    "prompt": "Correct the main verb: Does he likes apples?",
+    "answers": [
+      "like",
+      "Does he like apples"
+    ],
+    "distractors": {
+      "likes": "wrong_auxiliary"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "questions-2",
+    "skill": "questions",
+    "type": "correct",
+    "prompt": "Correct the main verb: Did she walked home?",
+    "answers": [
+      "walk",
+      "Did she walk home"
+    ],
+    "distractors": {
+      "walked": "wrong_auxiliary"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "questions-3",
+    "skill": "questions",
+    "type": "correct",
+    "prompt": "Correct the main verb: Do they plays games?",
+    "answers": [
+      "play",
+      "Do they play games"
+    ],
+    "distractors": {
+      "plays": "wrong_auxiliary"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "questions-4",
+    "skill": "questions",
+    "type": "correct",
+    "prompt": "Correct the main verb: Did you saw the bird?",
+    "answers": [
+      "see",
+      "Did you see the bird"
+    ],
+    "distractors": {
+      "saw": "wrong_auxiliary"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "conditionals-1",
+    "skill": "conditionals",
+    "type": "fill",
+    "prompt": "Use will + stay: If it snows tomorrow, we ___ home.",
+    "answers": [
+      "will stay"
+    ],
+    "distractors": {
+      "would stay": "wrong_conditional_tense"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "conditionals-2",
+    "skill": "conditionals",
+    "type": "fill",
+    "prompt": "Use will + grow: If you water the seed tomorrow, it ___.",
+    "answers": [
+      "will grow"
+    ],
+    "distractors": {
+      "would grow": "wrong_conditional_tense"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "conditionals-3",
+    "skill": "conditionals",
+    "type": "fill",
+    "prompt": "Use will + help: If you ask me later, I ___.",
+    "answers": [
+      "will help"
+    ],
+    "distractors": {
+      "would help": "wrong_conditional_tense"
+    },
+    "options": [],
+    "difficulty": 0.0,
+    "source": "curated-seed"
+  },
+  {
+    "id": "conditionals-4",
+    "skill": "conditionals",
+    "type": "fill",
+    "prompt": "Use will + play: If it is sunny tomorrow, we ___ outside.",
+    "answers": [
+      "will play"
+    ],
+    "distractors": {
+      "would play": "wrong_conditional_tense"
+    },
+    "options": [],
     "difficulty": 0.0,
     "source": "curated-seed"
   },

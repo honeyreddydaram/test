@@ -2,113 +2,169 @@
   "seed": 20261102,
   "learners": 100,
   "steps_per_learner": 200,
-  "assumptions": "Heterogeneous learn/slip/guess; binary latent skills; no latent prerequisite effects or forgetting during a short run; censored at budget; BKT defaults intentionally imperfect. Paired skill-exposure random draws. No claim about child learning.",
+  "assumptions": "Heterogeneous learn/slip/guess; binary latent skills; no latent prerequisite effects or forgetting during a short run; censored at budget; BKT defaults intentionally imperfect. Paired skill-exposure random draws. All policies use the same 90-item bank and repeat-evidence weighting. No item memorization in the latent simulator; extra items alone cannot improve its true learning. No claim about child learning.",
   "policies": {
     "adaptive": {
       "prediction": {
         "n": 20000,
-        "auc": 0.8088107268559337,
-        "accuracy": 0.7754,
-        "brier": 0.15836781414597412,
-        "ece": 0.01022627733789215,
+        "auc": 0.8025313802083334,
+        "accuracy": 0.75655,
+        "brier": 0.16818246982930188,
+        "ece": 0.018377887512954563,
         "calibration_bins": [
           {
             "bin": 2,
-            "count": 2911,
-            "predicted": 0.29696064665877664,
-            "observed": 0.27447612504294056
+            "count": 3314,
+            "predicted": 0.2882329431264749,
+            "observed": 0.2751961375980688
           },
           {
             "bin": 3,
-            "count": 2019,
-            "predicted": 0.3298834660276184,
-            "observed": 0.3472015849430411
+            "count": 2302,
+            "predicted": 0.3352144565305571,
+            "observed": 0.36533449174630755
           },
           {
             "bin": 4,
-            "count": 1733,
-            "predicted": 0.44506917671067,
-            "observed": 0.44143104443162146
+            "count": 2509,
+            "predicted": 0.44275812076467363,
+            "observed": 0.45595854922279794
           },
           {
             "bin": 5,
-            "count": 1454,
-            "predicted": 0.5522537874613594,
-            "observed": 0.5859697386519945
+            "count": 1268,
+            "predicted": 0.5543562111707206,
+            "observed": 0.6206624605678234
           },
           {
             "bin": 6,
-            "count": 351,
-            "predicted": 0.6475853710884315,
-            "observed": 0.6695156695156695
+            "count": 626,
+            "predicted": 0.6641056066265678,
+            "observed": 0.744408945686901
           },
           {
             "bin": 7,
-            "count": 1524,
-            "predicted": 0.7509095829648064,
-            "observed": 0.7309711286089239
+            "count": 1718,
+            "predicted": 0.7439146838122802,
+            "observed": 0.759604190919674
           },
           {
             "bin": 8,
-            "count": 10008,
-            "predicted": 0.8891190840540761,
-            "observed": 0.8901878497202238
+            "count": 8263,
+            "predicted": 0.8815688257325348,
+            "observed": 0.8889023357134213
           }
         ]
       },
-      "fraction_reaching_85_percent_latent_skills": 0.33,
-      "restricted_mean_steps_to_85_percent": 183.13,
-      "mean_final_latent_mastery": 0.7816666666666667
+      "fraction_reaching_85_percent_latent_skills": 0.43,
+      "restricted_mean_steps_to_85_percent": 173.48,
+      "mean_final_latent_mastery": 0.8277777777777777
+    },
+    "hard_prerequisites": {
+      "prediction": {
+        "n": 20000,
+        "auc": 0.8056576112296302,
+        "accuracy": 0.7737,
+        "brier": 0.15813900212694265,
+        "ece": 0.028784679615549504,
+        "calibration_bins": [
+          {
+            "bin": 2,
+            "count": 2988,
+            "predicted": 0.284119512788978,
+            "observed": 0.2814591700133869
+          },
+          {
+            "bin": 3,
+            "count": 2068,
+            "predicted": 0.335825796045113,
+            "observed": 0.4032882011605416
+          },
+          {
+            "bin": 4,
+            "count": 2068,
+            "predicted": 0.44336661034395214,
+            "observed": 0.4825918762088975
+          },
+          {
+            "bin": 5,
+            "count": 1129,
+            "predicted": 0.5538203675084227,
+            "observed": 0.674933569530558
+          },
+          {
+            "bin": 6,
+            "count": 626,
+            "predicted": 0.6589962578171532,
+            "observed": 0.7587859424920128
+          },
+          {
+            "bin": 7,
+            "count": 1484,
+            "predicted": 0.7456076459270732,
+            "observed": 0.7789757412398922
+          },
+          {
+            "bin": 8,
+            "count": 9637,
+            "predicted": 0.8852971896465255,
+            "observed": 0.8955069004877036
+          }
+        ]
+      },
+      "fraction_reaching_85_percent_latent_skills": 0.29,
+      "restricted_mean_steps_to_85_percent": 187.38,
+      "mean_final_latent_mastery": 0.7555555555555555
     },
     "fixed": {
       "prediction": {
         "n": 20000,
-        "auc": 0.8053083032717973,
-        "accuracy": 0.75905,
-        "brier": 0.16716804939231825,
-        "ece": 0.00923717836612878,
+        "auc": 0.8020674356132078,
+        "accuracy": 0.7546,
+        "brier": 0.16913321296036213,
+        "ece": 0.017844665503292525,
         "calibration_bins": [
           {
             "bin": 2,
-            "count": 3281,
-            "predicted": 0.29702108028767543,
-            "observed": 0.2736970435842731
+            "count": 3425,
+            "predicted": 0.28766112440793407,
+            "observed": 0.275036496350365
           },
           {
             "bin": 3,
-            "count": 2267,
-            "predicted": 0.3298209434825678,
-            "observed": 0.3361270401411557
+            "count": 2336,
+            "predicted": 0.3352672166320022,
+            "observed": 0.3681506849315068
           },
           {
             "bin": 4,
-            "count": 2129,
-            "predicted": 0.4448369447806827,
-            "observed": 0.4443400657585721
+            "count": 2527,
+            "predicted": 0.4428262424673474,
+            "observed": 0.4566679857538583
           },
           {
             "bin": 5,
-            "count": 1547,
-            "predicted": 0.5526442546736535,
-            "observed": 0.579185520361991
+            "count": 1282,
+            "predicted": 0.5540921543330227,
+            "observed": 0.624804992199688
           },
           {
             "bin": 6,
-            "count": 394,
-            "predicted": 0.6466937320773837,
-            "observed": 0.6802030456852792
+            "count": 636,
+            "predicted": 0.6634649210484118,
+            "observed": 0.7389937106918238
           },
           {
             "bin": 7,
-            "count": 1647,
-            "predicted": 0.7459832844424493,
-            "observed": 0.7279902853673346
+            "count": 1587,
+            "predicted": 0.7414989065307942,
+            "observed": 0.7548834278512917
           },
           {
             "bin": 8,
-            "count": 8735,
-            "predicted": 0.8858652376327948,
-            "observed": 0.8868918145392101
+            "count": 8207,
+            "predicted": 0.883279068107455,
+            "observed": 0.8883879614962836
           }
         ]
       },
